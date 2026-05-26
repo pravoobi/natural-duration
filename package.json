@@ -1,0 +1,60 @@
+{
+  "name": "natural-duration",
+  "version": "0.1.0",
+  "description": "Parse and format human-written time expressions: durations, relative times, and recurring schedules",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --sourcemap --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "duration",
+    "time",
+    "parse",
+    "natural-language",
+    "humanize",
+    "relative",
+    "recurring",
+    "schedule"
+  ],
+  "author": "Venkata Praveen Kumar Velisetty",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pravoobi/natural-duration.git"
+  },
+  "homepage": "https://github.com/pravoobi/natural-duration#readme",
+  "bugs": {
+    "url": "https://github.com/pravoobi/natural-duration/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "eslint": "^10.4.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "typescript-eslint": "^8.59.4",
+    "vitest": "^1.6.0"
+  }
+}

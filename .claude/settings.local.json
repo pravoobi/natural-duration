@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm test *)",
+      "Bash(grep -E '\\\\.\\(md|json|yml|yaml|gitignore|editorconfig|prettierrc|eslintrc|npmignore|LICENSE\\)$')",
+      "Bash(grep -E '\\\\.\\(js|mjs|ts|map\\)$')",
+      "Bash(gzip -c \"C:\\\\Users\\\\172865\\\\code\\\\natural-duration\\\\dist\\\\index.js\")",
+      "Bash(gzip -c \"C:\\\\Users\\\\172865\\\\code\\\\natural-duration\\\\dist\\\\index.mjs\")",
+      "Bash(gzip -c \"C:\\\\Users\\\\172865\\\\code\\\\natural-duration\\\\dist\\\\index.d.ts\")"
+    ]
+  }
+}

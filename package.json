@@ -43,7 +43,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pravoobi/natural-duration.git"
+    "url": "git+https://github.com/pravoobi/natural-duration.git"
   },
   "homepage": "https://github.com/pravoobi/natural-duration#readme",
   "bugs": {
